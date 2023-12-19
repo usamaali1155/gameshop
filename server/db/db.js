@@ -20,7 +20,7 @@ if (process.env.DATABASE_URL) {
 
 const db = new Sequelize(
   process.env.DATABASE_URL ||
-  `postgres://postgres:adeel@localhost:5432/gameshop`,
+  `postgres://postgres:usama@localhost:5432/gameshop`,
   config
 );
 
