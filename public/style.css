@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1em;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+.signin-up {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.signin-up:hover {
+  color: rgb(165, 182, 239);
+}
+
+#logout {
+  font-size: 1rem;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+#logout:hover {
+  background-color: rgb(125, 148, 238);
+}
+
+#login-nav {
+  justify-content: flex-end;
+}
+
+.search {
+  display: none;
+}
+
+.search > input {
+  width: 20em;
+  height: 1.5em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(19, 56, 190);
+  padding: 0.5em;
+}
+
+.search > button {
+  margin-left: 0.5em;
+  height: 2.7em;
+  width: 4em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(8, 90, 222);
+  cursor: pointer;
+}
+
+.search > button:hover {
+  background-color: lightgrey;
+}
+
+.drawer-paper {
+  width: 25%;
+}
+
+#signin-form {
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1.5em;
+}
+
+#signin-form > h1 {
+  text-align: center;
+}
+
+span {
+  color: maroon;
+}
+
+#signin-form > a {
+  text-align: center;
+  color: black;
+}
+
+#signin-form > a:hover {
+  color: grey;
+}
+
+.input-container > input {
+  width: 20em;
+  height: 1.5em;
+  border-radius: 0.5em;
+  border: 1px solid lightgrey;
+  padding: 0.5em;
+  margin-top: 0.5rem;
+}
+
+.input-container > button {
+  height: 2.7em;
+  width: 5em;
+  border-radius: 0.5em;
+  border: 1px solid lightgrey;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: maroon;
+  color: white;
+}
+
+.input-container > button:hover {
+  background-color: red;
+}
+
+.input-container > label {
+  margin-left: 0.5em;
+  color: maroon;
+}
+
+#footer {
+  display: flex;
+  background-color: maroon;
+  color: white;
+  padding: 1em;
+  height: 25vh;
+  margin-top: 5vh;
+}
+
+.footer-container {
+  width: 33vw;
+  padding: 0.5em;
+}
+
+#copywrite-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-column-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid white;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10vh;
+}
+
+.footer-column-item {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-column-item:hover {
+  color: lightgrey;
+}
+
+#footer-socials {
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+}
+
+@media screen and (min-width: 600px) {
+  .search {
+    display: flex;
+  }
+
+  #signin-form {
+    width: 30vw;
+  }
+
+  .carousel {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: maroon;
+    margin: 1em auto;
+    border-radius: 0.5em;
+  }
+
+  .carousel-img {
+    width: 95%;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    box-shadow: 0 5 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    width: 95%;
+    padding: 0.5em;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+  }
+
+  .button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indicator-buttons {
+    border: none;
+    cursor: pointer;
+  }
+
+  .indicators > button {
+    margin: 5px;
+    background: none;
+  }
+
+  .material-symbols-outlined {
+    color: black;
+  }
+
+  .indicator-symbol {
+    color: black;
+  }
+
+  .indicator-symbol-active {
+    color: maroon;
+  }
+}
+
+.product-image img {
+  height: 25rem;
+  margin-right: 15rem;
+}
+
+.single-product {
+  margin-right: 3rem;
+}
+
+.single-product img {
+  height: 25rem;
+}
+
+#logo {
+  color: rgb(255, 254, 254) !important;
+  margin-right: 12rem;
+}
+
+.cartLink {
+  position: relative;
+}
+
+.cartLength {
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+  background: blue;
+  color: white;
+  right: -5px;
+  padding: 2px 5px;
+  border-radius: 100%;
+}
+
+.products-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.products {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
