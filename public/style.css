@@ -328,3 +328,13 @@ span {
   align-items: center;
   gap: 10px;
 }
+
+.shop-by-genre {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
