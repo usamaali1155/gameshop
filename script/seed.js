@@ -131,7 +131,7 @@ async function seed() {
       price: 99.99,
       inventory: 10,
       imageUrl: '/images/sackboy.jpg',
-      genre: 'Sports'
+      genre: 'RPG'
     }),
   ])
 
