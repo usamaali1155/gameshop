@@ -61,7 +61,7 @@ const Cart = () => {
         marginTop: "1rem",
       }}
     >
-      <Box sx={{ flexBasis: "70%", marginRight: "2rem" }}>
+      <Box sx={{ flexBasis: "70%", marginRight: "2rem", justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }}>
         {cartItems.length === 0 ? (
           <>
             <Typography variant="h6">
