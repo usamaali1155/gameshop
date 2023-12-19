@@ -20,30 +20,26 @@ const Checkout = () => {
   const guestCartItems = useSelector(selectGuestCart);
   const cartStatus = useSelector((state) => state.cartItem.status);
   const error = useSelector((state) => state.cartItem.error);
-  // Determine which items to display
   const displayItems = userId ? cartItems : guestCartItems;
   if (!displayItems || displayItems.length === 0) {
     return <div>Loading...</div>;
   }
-  //   const [quantity, setQuantity] = useState(item.quantity);
   const subtotal = useMemo(() => {
     return displayItems
       ? displayItems.reduce((acc, item) => {
-          const price = item.product && item.product.price;
-          return (
-            acc +
-            (price && !isNaN(Number(price)) ? Number(price) : 0) * item.quantity
-          );
-        }, 0)
+        const price = item.product && item.product.price;
+        return (
+          acc +
+          (price && !isNaN(Number(price)) ? Number(price) : 0) * item.quantity
+        );
+      }, 0)
       : 0;
   }, [displayItems]);
 
   useEffect(() => {
     if (user && userId) {
-      // If the user is logged in and userId is defined
       dispatch(fetchCartItems(userId));
     } else {
-      // If the user is a guest
       const guestCart = JSON.parse(localStorage.getItem("guestCart") || "[]");
       dispatch(setGuestCartItems(guestCart));
     }

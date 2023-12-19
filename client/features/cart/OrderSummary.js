@@ -7,9 +7,7 @@ const OrderSummary = ({ subtotal, checkout }) => {
   return (
     <Box
       sx={{
-        // display: "flex",
         flexDirection: "column",
-        // alignItems: "flex-start",
         justifyContent: "center",
         margin: "1rem",
         padding: "1rem",
@@ -40,7 +38,7 @@ const OrderSummary = ({ subtotal, checkout }) => {
               color="primary"
               size="large"
               style={{ marginTop: "20px" }}
-              disabled={subtotal <= 0} // Disable button if there's nothing in the cart
+              disabled={subtotal <= 0}
             >
               {checkout ? "Submit" : "Checkout"}
             </Button>

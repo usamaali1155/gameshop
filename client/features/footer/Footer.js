@@ -29,7 +29,7 @@ function Footer() {
         </div>
       </div>
       <div className='footer-container' id="copywrite-container">
-        <p id="copywrite">© 2023 GameWorld. All rights reserved.</p>
+        <p id="copywrite">© 2023 Gameshop. All rights reserved.</p>
       </div>
     </div>
   )

@@ -7,18 +7,12 @@ export const updateGuestCartItem = createAsyncThunk(
   "guestCart/updateItem",
   async ({ productId, quantity }, { getState }) => {
     const { guestCart } = getState();
-
-    // Find the item index in the guestCart array
     const itemIndex = guestCart.findIndex((item) => item.id === productId);
 
     if (itemIndex === -1) {
       throw new Error("Item not found in the guest cart");
     }
-
-    // Update the quantity
     guestCart[itemIndex].quantity = quantity;
-
-    // Return the updated guestCart array
     return guestCart;
   }
 );

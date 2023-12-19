@@ -63,7 +63,6 @@ export const clearAllItems = createAsyncThunk(
       console.log("Clearing all items for userId:", userId);
       await axios.delete(`/api/cartItems/${userId}/clearAllItems`);
       console.log("Clear all items successful");
-      // Dispatch fetchCartItems to refresh the cart items after clearing
       dispatch(fetchCartItems(userId));
       return userId;
     } catch (error) {
@@ -72,7 +71,7 @@ export const clearAllItems = createAsyncThunk(
       } else {
         console.log("Failed to clear Cart");
       }
-      throw error; // Re-throw the error to be handled by the component
+      throw error;
     }
   }
 );

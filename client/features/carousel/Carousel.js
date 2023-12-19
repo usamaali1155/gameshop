@@ -64,7 +64,7 @@ function Carousel() {
                             >
                                 <span
                                     className={`material-symbols-outlined ${index === activeIndex ?
-                                            "indicator-symbol-active" : "indicator-symbol"
+                                        "indicator-symbol-active" : "indicator-symbol"
                                         }`}
                                 >
                                     radio_button_checked
