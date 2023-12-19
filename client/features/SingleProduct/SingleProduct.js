@@ -45,13 +45,14 @@ function SingleProduct() {
             <h1>{product.name}</h1>
             <div className="single-product-main">
                 <img src={product.imageUrl}></img>
+                <div className="single-product-buy">
+                    <p className="single-product-price">Price : ${product.price}</p>
+                    <button className="add-to-cart" onClick={handleAddClick}>Add to Cart</button>
+                </div>
                 <div className="single-product-info">
-                    <p>Description:{product.description}</p>
                     <h3>Genre:{product.genre}</h3>
-                    <div className="single-product-buy">
-                        <p className="single-product-price">${product.price}</p>
-                        <button className="add-to-cart" onClick={handleAddClick}>Add to Cart</button>
-                    </div>
+                    <h4>Description:</h4>
+                    <p>{product.description}</p>
                 </div>
             </div>
         </div>
