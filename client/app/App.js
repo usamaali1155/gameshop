@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import SideNavBar from "../features/sidenavbar/SideNavBar";
 import Navbar from "../features/navbar/Navbar";
 import AppRoutes from "./AppRoutes";
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { getProducts } from "../features/Allproducts/productSlice";
 import Footer from "../features/footer/Footer";
 const App = () => {
