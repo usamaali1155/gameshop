@@ -109,6 +109,30 @@ async function seed() {
       imageUrl: '/images/WWE 2K23.jpg',
       genre: 'Sports'
     }),
+    Product.create({
+      name: 'Uncharted: Legacy of Thieves Collection',
+      description: 'UNCHARTED TM 4: A Thief’s End : -A globe-trotting adventure with the largest and most detailed environments in the UNCHARTED franchise',
+      price: 99.99,
+      inventory: 10,
+      imageUrl: '/images/uncharted.jpg',
+      genre: 'Action'
+    }),
+    Product.create({
+      name: 'Spider-Man: Miles Morales',
+      description: 'Miles moral discovers explosive powers that set him apart from his mentor, Peter Parker. A war for power, a war for control of Marvel’s new York has broken out between a devious Energy Corporation and a high-tech criminal army',
+      price: 99.99,
+      inventory: 10,
+      imageUrl: '/images/spiderman.jpg',
+      genre: 'Fighting'
+    }),
+    Product.create({
+      name: 'Sackboy : A Big Adventure',
+      description: 'Tempest 3D audio Tech - hear craft world come life all around you Haptic feedback - running across wool like flooring or platforms will use Haptics to simulate the change in material under sackboy',
+      price: 99.99,
+      inventory: 10,
+      imageUrl: '/images/sackboy.jpg',
+      genre: 'Sports'
+    }),
   ])
 
   const cartItems = await Promise.all([
